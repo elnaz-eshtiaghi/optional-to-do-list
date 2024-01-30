@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="assets/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="assets/stylesheet/master.css">
+</head>
+
+<body>
+    <main>
+        <div class="container xxl-container h-100">
+            <div class="row justify-content-center align-items-center h-100">
+                <section class="col-12 col-md-6  mx-auto my-5 px-5 py-3 border">
+                    <div class="row">
+                        <div>
+                            <div class="row justify-content-between align-items-center">
+                                <figure class="w-25"><img src="assets/img/—Pngtree—note book and pencil 3d_6861622.png"
+                                        class="w-100" alt=""></figure>
+                                <h1 class="col-4 p-1 text-center text-muted">to do list</h1>
+                            </div>
+                        </div>
+                        <h4 class="text-center">~ Today I need to ~</h4>
+                        <div>
+                            <div class="row justify-content-between align-items-center mt-1">
+                                <input type="text" class="col-9 p-2 bg-transparent">
+                                <div class="col rounded-2 px-0 pb-1 border-dark mx-3 ">
+                                    <button onclick="_sub(event)"
+                                        class=" p-2 rounded-2  bg-white w-100 ">submit</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="row mt-5 justify-content-between ">
+                                <ol class="col-3 " id="_all">
+                                    <strong class="rounded-1 ">all</strong>
+                                </ol>
+                                <ol class="col-3 mx-2" id="_done">
+                                    <strong class="rounded-1 ">done</strong>
+                                </ol>
+                                <ol class="col-3 " id="_delete">
+                                    <strong class="rounded-1 ">delete</strong>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="clrbtn" class="rounded-2 px-0 pb-1 border-dark mx-3 d-flex d-none">
+                        <button class="p-2 rounded-2  bg-white w-100" onclick="_all2()"
+                            id="btn2">Clear All</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- .....js..... -->
+    <script src="assets/javascript/master.js">
+        
+
+    </script>
+
+</body>
+
+</html>

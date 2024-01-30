@@ -1,0 +1,125 @@
+@font-face {
+    font-family: goach;
+    src: url(../font/GochiHand-Regular.ttf);
+}
+
+main {
+    background-color: #A39BD2;
+    min-height: 100vh;
+    font-family: goach;
+
+    section {
+        min-height: 700px;
+        border-radius: 50px;
+        box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.164);
+        background-image: url(../img/light_grey_dots_background.jpg);
+        background-size: cover;
+
+        .row {
+            h1 {
+                background-color: #48FCD3;
+                font-size: 1.8rem;
+                border-radius: 5px 7px 16px/30px 3px;
+                transform: rotate(-5deg);
+            }
+
+            input {
+                border: none;
+                border-bottom: 3px dashed #EBA6E4;
+                outline-color: #EBA6E4;
+
+            }
+
+            button {
+                height: 90%;
+                transition: 0.5s;
+            }
+
+            >div>.row {
+                >div {
+                    background-image: repeating-linear-gradient(45deg, #48FCD3 5px, black 10px);
+                    transform: rotate(10deg);
+                    &:hover{
+                        transform: rotate(0);
+                        
+                    }
+                }
+
+                ol {
+                    width: 31%;
+                    >strong {
+                        font-size: 1.8rem;
+                        text-transform: uppercase;
+                        
+                    }
+                    li{
+                       width: 100%;
+                        font-size: 0.8rem;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        word-wrap: break-word;
+                        border-bottom: 1px dashed black;
+                        
+                        strong{
+                            font-weight: lighter;
+
+                        }
+                        >button{
+                            font-size: 0.7rem;
+                            background-color: transparent;
+                            border: none;
+                            &:nth-of-type(1){
+                                &:hover{
+                                    color: #EBA6E4;
+                                }
+                            }
+                            &:nth-of-type(2){
+                                &:hover{
+                                    color: #48FCD3;
+                                }
+                            }
+                        }
+                       
+                    }
+                    &:nth-of-type(1){
+                        >strong{
+                            border-bottom: 3px solid rgb(0, 0, 0);
+                            text-shadow: none;
+                        }
+                    }
+                    &:nth-of-type(2){
+                        >strong{
+                            border-bottom: 3px solid #48FCD3;
+                            color: #48FCD3;
+                        }
+                    }
+                    &:nth-of-type(3){
+                        >strong{
+                            border-bottom: 3px solid #EBA6E4;
+                            color: #EBA6E4;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+#clrbtn {
+        background-image: repeating-linear-gradient(45deg, #48FCD3 5px, black 10px);
+        &:hover{
+            
+            transition: 0.5s;
+            transform: rotate(2deg);
+            
+        }
+        button {
+            height: 90%;
+            width: 100%;
+            
+        }
+    }
